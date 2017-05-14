@@ -1,2 +1,2 @@
 # akka-websocket-experiment
-Java + Akka experiments with websockets.
+Java + Akka experiments (websockets in near future).
