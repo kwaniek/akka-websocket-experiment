@@ -10,6 +10,8 @@
 
     <properties>
         <akka.actor.version>2.5.1</akka.actor.version>
+        <akka.http.version>10.0.6</akka.http.version>
+        <akka.stream.version>2.5.0</akka.stream.version>
     </properties>
 
     <dependencies>
@@ -18,6 +20,19 @@
             <artifactId>akka-actor_2.11</artifactId>
             <version>${akka.actor.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-http_2.11 -->
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-http_2.11</artifactId>
+            <version>${akka.http.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-stream_2.11 -->
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-stream_2.11</artifactId>
+            <version>${akka.stream.version}</version>
+        </dependency>
+
     </dependencies>
 
     <repositories>
