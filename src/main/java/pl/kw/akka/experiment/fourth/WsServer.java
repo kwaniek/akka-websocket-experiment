@@ -30,7 +30,7 @@ public class WsServer {
 
         try {
             final Materializer materializer = ActorMaterializer.create(actorSystem);
-            Function<HttpRequest, HttpResponse> handler = request -> handleRequest(request);
+            Function<HttpRequest, HttpResponse> handler = WsServer::handleRequest;
 
             CompletionStage<ServerBinding> serverBindingFuture = Http
                     .get(actorSystem)
